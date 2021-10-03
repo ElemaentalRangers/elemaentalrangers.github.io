@@ -25,7 +25,7 @@
 
             $(document).ready(function(){
                $("#content").load(hero + ".html", function() {
-                 $(this).html($(this).html().replace("This Hero build was built using Mids Reborn 3.0.6.0", "<h1>Character Build</h1>"));
+                 $(this).html($(this).html().replace("This Hero build was built using Mids Reborn 3.0.6.0", "<h1>Hero Profile</h1>"));
                  $(this).html($(this).html().replace("https://github.com/LoadedCamel/MidsReborn", ""));
                  $(this).html($(this).html().replace("Hero Profile:", "<h2>Hero Moves</h2><p>(A) = Auto, (#) = Level</p><div class='moveset'>"));
                  $(this).html($(this).html().replaceAll("[Empty]", "<span class='null'>[Empty]</span>"));
