@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Elemaental Rangers COH Character Builds | Mae | TheVortex</title>
+        <meta name="description" content="TheVortex's Character Build Sheet.">
+        <meta name="author" content="The Elemaental Rangers">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#004d5a">
+        <meta name="msapplication-TileColor" content="#004d5a">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="stylesheet" href="/css/styles.css">
+        <script language="JavaScript" type="text/javascript" src="/js/jquery-3.6.0.min"></script>
+
+            <!-- Load hero build .html, change lines as needed for easier readability and styling -->
+        <script>
+            var hero = "The_vortex";
+
+            $(document).ready(function(){
+               $("#content").load(hero + ".html", function() {
+                 $(this).html($(this).html().replace("This Hero build was built using Mids Reborn 3.0.6.0", "<h1>Character Build</h1>"));
+                 $(this).html($(this).html().replace("https://github.com/LoadedCamel/MidsReborn", ""));
+                 $(this).html($(this).html().replace("Hero Profile:", "<h2>Hero Moves</h2><p>(A) = Auto, (#) = Level</p><div class='moveset'>"));
+                 $(this).html($(this).html().replaceAll("[Empty]", "<span class='null'>[Empty]</span>"));
+                 $(this).html($(this).html().replace("------------", "</div>"));
+                }); 
+            });
+    </script>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                Nav Info Here
+            </nav>
+        </header>
+
+     <div id="content"></div>
+
+        <footer>Info Here</footer>
+
+    </body>
+</html>

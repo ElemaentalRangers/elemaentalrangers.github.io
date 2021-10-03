@@ -1,0 +1,59 @@
+ 
+ 
+ /* *** STYLES FOR CHARACTER BUILD SHEET *** */
+ 
+ #content {
+      width: 500px;
+      margin: 0 auto;
+      padding: 2rem;
+      background: #000;
+      display: grid;
+    }
+    
+    /* Headings */
+    #content h1 {
+      
+    }
+    
+    #content b {
+      color: white !important;
+    }
+    
+    /* Titles */
+    #content b font {
+      color: yellow !important;
+    }
+    
+    /* Items */
+        #content b font:nth-of-type(even), .null{
+      color: red !important;
+    }
+    
+    /* Lists */
+    #content ul {
+      color: purple;
+    }
+    
+    /* List Items */
+    #content ul li font {
+      color: green;
+    }
+    
+    /* Gets rid of the link */
+    a {
+      display: none;
+    }
+    
+    /* Cleans up code */
+    br {
+      display: none;
+    }
+    
+    b + br {
+      display: block;
+    }
+        
+    .null:after{
+        content: "\A";
+        white-space: pre-wrap;
+    }
