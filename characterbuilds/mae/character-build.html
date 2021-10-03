@@ -7,7 +7,7 @@
         <title>Elemaental Rangers COH Character Builds | Mae | TheVortex</title>
         <meta name="description" content="TheVortex's Character Build Sheet.">
         <meta name="author" content="The Elemaental Rangers">
-
+        <!-- Get favicon files -->
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -15,14 +15,27 @@
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#004d5a">
         <meta name="msapplication-TileColor" content="#004d5a">
         <meta name="theme-color" content="#ffffff">
-
+        <!-- Get Stylesheet -->
         <link rel="stylesheet" href="/css/styles.css">
+        <!-- Get jQuery language -->
         <script language="JavaScript" type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
-
-            <!-- Load hero build .html, change lines as needed for easier readability and styling -->
         <script>
-            var hero = "The_vortex";
+            /* Load Header and Footer */
+            $(document).ready(function(){
+               $("#header").load("/includes/header.html", function() {
+                }); 
+            });
+            $(document).ready(function(){
+               $("footer").load("/includes/footer.html", function() {
+                }); 
+            });
 
+            /* Replace variable with file name for corresponding generated .html file, NOT hero's name!
+               ie. Hero's proper name is TheVortex, but the generated build file is The_vortex.html,
+               put "The_vortex" into hero variable */
+            var hero = "The_vortex";
+            
+            /* Load hero info into page */
             $(document).ready(function(){
                $("#content").load(hero + ".html", function() {
                  $(this).html($(this).html().replace("This Hero build was built using Mids Reborn 3.0.6.0", "<h1>Hero Profile</h1>"));
