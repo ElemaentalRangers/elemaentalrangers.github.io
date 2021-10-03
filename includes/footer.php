@@ -1,1 +1,0 @@
-<footer>Info Here</footer>
